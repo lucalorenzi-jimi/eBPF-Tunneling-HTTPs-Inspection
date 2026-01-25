@@ -1,0 +1,258 @@
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:33:44 (uptime: 0d, 00h 00m 30s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afpacket.polls                        | Total                     | 236
+capture.afpacket.poll_timeout                 | Total                     | 236
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 10000
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:33:52 (uptime: 0d, 00h 00m 38s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afpacket.polls                        | Total                     | 593
+capture.afpacket.poll_timeout                 | Total                     | 593
+flow.mgr.full_hash_pass                       | Total                     | 1
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 10000
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:34:00 (uptime: 0d, 00h 00m 46s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afpacket.polls                        | Total                     | 832
+capture.afpacket.poll_timeout                 | Total                     | 832
+flow.mgr.full_hash_pass                       | Total                     | 2
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 10000
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:34:08 (uptime: 0d, 00h 00m 54s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afpacket.polls                        | Total                     | 1191
+capture.afpacket.poll_timeout                 | Total                     | 1191
+flow.mgr.full_hash_pass                       | Total                     | 3
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 10000
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:34:16 (uptime: 0d, 00h 01m 02s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afpacket.polls                        | Total                     | 1549
+capture.afpacket.poll_timeout                 | Total                     | 1549
+flow.mgr.full_hash_pass                       | Total                     | 3
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 10000
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:34:24 (uptime: 0d, 00h 01m 10s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afpacket.polls                        | Total                     | 1788
+capture.afpacket.poll_timeout                 | Total                     | 1788
+flow.mgr.full_hash_pass                       | Total                     | 4
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 10000
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:34:32 (uptime: 0d, 00h 01m 18s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afpacket.polls                        | Total                     | 2146
+capture.afpacket.poll_timeout                 | Total                     | 2146
+flow.mgr.full_hash_pass                       | Total                     | 5
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 10000
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:34:40 (uptime: 0d, 00h 01m 26s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afpacket.polls                        | Total                     | 2504
+capture.afpacket.poll_timeout                 | Total                     | 2504
+flow.mgr.full_hash_pass                       | Total                     | 6
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 10000
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:34:48 (uptime: 0d, 00h 01m 34s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afpacket.polls                        | Total                     | 2744
+capture.afpacket.poll_timeout                 | Total                     | 2744
+flow.mgr.full_hash_pass                       | Total                     | 6
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 10000
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:34:56 (uptime: 0d, 00h 01m 42s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.afpacket.polls                        | Total                     | 3102
+capture.afpacket.poll_timeout                 | Total                     | 3102
+flow.mgr.full_hash_pass                       | Total                     | 7
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 10000
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:35:04 (uptime: 0d, 00h 01m 50s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.kernel_packets                        | Total                     | 748
+capture.afpacket.polls                        | Total                     | 3617
+capture.afpacket.poll_timeout                 | Total                     | 3450
+capture.afpacket.poll_data                    | Total                     | 167
+decoder.pkts                                  | Total                     | 374
+decoder.bytes                                 | Total                     | 152610
+decoder.invalid                               | Total                     | 3
+decoder.ipv4                                  | Total                     | 11
+decoder.ipv6                                  | Total                     | 363
+decoder.ethernet                              | Total                     | 374
+decoder.tcp                                   | Total                     | 371
+tcp.syn                                       | Total                     | 26
+tcp.synack                                    | Total                     | 26
+tcp.rst                                       | Total                     | 12
+decoder.avg_pkt_size                          | Total                     | 408
+decoder.max_pkt_size                          | Total                     | 9226
+tcp.active_sessions                           | Total                     | 26
+flow.total                                    | Total                     | 26
+flow.active                                   | Total                     | 26
+flow.tcp                                      | Total                     | 26
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 4
+decoder.event.afpacket.trunc_pkt              | Total                     | 3
+decoder.event.ipv6.trunc_pkt                  | Total                     | 3
+tcp.sessions                                  | Total                     | 26
+tcp.ssn_from_pool                             | Total                     | 26
+tcp.ack_unseen_data                           | Total                     | 2
+tcp.segment_from_cache                        | Total                     | 4
+tcp.segment_from_pool                         | Total                     | 140
+tcp.reassembly_gap                            | Total                     | 4
+detect.alert                                  | Total                     | 11
+app_layer.flow.http                           | Total                     | 14
+app_layer.tx.http                             | Total                     | 13
+app_layer.flow.tls                            | Total                     | 13
+app_layer.error.tls.gap                       | Total                     | 1
+flow.mgr.full_hash_pass                       | Total                     | 8
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 9600
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 7
+flow.mgr.flows_notimeout                      | Total                     | 7
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 636972
+http.memuse                                   | Total                     | 5952
+flow.memuse                                   | Total                     | 7234304
+------------------------------------------------------------------------------------
+Date: 1/25/2026 -- 15:35:08 (uptime: 0d, 00h 01m 54s)
+------------------------------------------------------------------------------------
+Counter                                       | TM Name                   | Value
+------------------------------------------------------------------------------------
+capture.kernel_packets                        | Total                     | 748
+capture.afpacket.polls                        | Total                     | 3769
+capture.afpacket.poll_timeout                 | Total                     | 3598
+capture.afpacket.poll_data                    | Total                     | 167
+decoder.pkts                                  | Total                     | 374
+decoder.bytes                                 | Total                     | 152610
+decoder.invalid                               | Total                     | 3
+decoder.ipv4                                  | Total                     | 11
+decoder.ipv6                                  | Total                     | 363
+decoder.ethernet                              | Total                     | 374
+decoder.tcp                                   | Total                     | 371
+tcp.syn                                       | Total                     | 26
+tcp.synack                                    | Total                     | 26
+tcp.rst                                       | Total                     | 12
+decoder.avg_pkt_size                          | Total                     | 408
+decoder.max_pkt_size                          | Total                     | 9226
+flow.total                                    | Total                     | 26
+flow.tcp                                      | Total                     | 26
+flow.wrk.spare_sync_avg                       | Total                     | 100
+flow.wrk.spare_sync                           | Total                     | 4
+decoder.event.afpacket.trunc_pkt              | Total                     | 3
+decoder.event.ipv6.trunc_pkt                  | Total                     | 3
+flow.wrk.flows_evicted_needs_work             | Total                     | 14
+flow.wrk.flows_evicted_pkt_inject             | Total                     | 15
+flow.wrk.flows_injected                       | Total                     | 14
+tcp.sessions                                  | Total                     | 26
+tcp.ssn_from_pool                             | Total                     | 26
+tcp.ack_unseen_data                           | Total                     | 2
+tcp.segment_from_cache                        | Total                     | 4
+tcp.segment_from_pool                         | Total                     | 140
+tcp.reassembly_gap                            | Total                     | 4
+detect.alert                                  | Total                     | 11
+app_layer.flow.http                           | Total                     | 14
+app_layer.tx.http                             | Total                     | 13
+app_layer.flow.tls                            | Total                     | 13
+app_layer.error.tls.gap                       | Total                     | 1
+flow.end.state.closed                         | Total                     | 26
+flow.end.tcp_state.closed                     | Total                     | 26
+flow.end.tcp_liberal                          | Total                     | 2
+flow.mgr.full_hash_pass                       | Total                     | 9
+flow.mgr.rows_per_sec                         | Total                     | 6553
+flow.spare                                    | Total                     | 9600
+flow.mgr.rows_maxlen                          | Total                     | 1
+flow.mgr.flows_checked                        | Total                     | 21
+flow.mgr.flows_notimeout                      | Total                     | 21
+memcap_pressure                               | Total                     | 5
+memcap_pressure_max                           | Total                     | 5
+flow.recycler.recycled                        | Total                     | 12
+flow.recycler.queue_max                       | Total                     | 12
+tcp.memuse                                    | Total                     | 2490368
+tcp.reassembly_memuse                         | Total                     | 458752
+flow.memuse                                   | Total                     | 7234304
