@@ -5,9 +5,9 @@
 
 char __license[] SEC("license") = "Dual MIT/GPL";
 
-// Struttura per raccolta dati PPID, UID, GID e command
+// Struttura per raccolta dati PID, UID, GID e command
 struct tls_data_event_t {
-    u32 pid;		//PID
+    u32 pid;		// Process ID
     u32 uid;        // User ID 
     u32 gid;        // Group ID
     u32 len;        // Lunghezza del payload catturato
