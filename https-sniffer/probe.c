@@ -10,9 +10,9 @@ struct tls_data_event_t {
     u32 pid;		//PID
     u32 uid;        // User ID 
     u32 gid;        // Group ID
-    u32 len;
+    u32 len;        // Lunghezza del payload catturato
     char comm[16];  // Nome del comando
-    u8 data[400];
+    u8 data[400];   // Buffer del payload
 };
 
 // 1. Definizione RINGBUF 
