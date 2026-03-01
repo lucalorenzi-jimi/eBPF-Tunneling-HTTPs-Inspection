@@ -1,0 +1,1 @@
+alert tcp any any -> any 8000 (msg:"[DIAGNOSTICA] Pacchetto TCP catturato su porta 8000"; sid:1000001; rev:1;)
