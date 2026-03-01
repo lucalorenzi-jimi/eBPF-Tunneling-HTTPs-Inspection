@@ -291,7 +291,7 @@ func main() {
 				}
 				// Caso B: HTTP/1.1
 				if strings.HasPrefix(sPayload, "GET ") || strings.HasPrefix(sPayload, "POST ") ||
-					strings.HasPrefix(sPayload, "HEAD ") || strings.HasPrefix(sPayload, "PUT ") {
+					strings.HasPrefix(sPayload, "HEAD ") || strings.HasPrefix(sPayload, "PUT ") || strings.HasPrefix(sPayload, "HTTP/1.") {
 					isStuffing = true
 					protocol = "HTTP/1.1 (Text Headers)"
 				}
@@ -310,7 +310,7 @@ func main() {
 			// HTTP/1.1 PARSER
 			if strings.HasPrefix(sPayload, "GET ") || strings.HasPrefix(sPayload, "POST ") ||
 				strings.HasPrefix(sPayload, "PUT ") || strings.HasPrefix(sPayload, "DELETE ") ||
-				strings.HasPrefix(sPayload, "HEAD ") || strings.HasPrefix(sPayload, "OPTIONS ") {
+				strings.HasPrefix(sPayload, "HEAD ") || strings.HasPrefix(sPayload, "OPTIONS ") || strings.HasPrefix(sPayload, "HTTP/1.") {
 				
 				fmt.Printf("[HTTP/1.1 Analysis]:\n")
 				
