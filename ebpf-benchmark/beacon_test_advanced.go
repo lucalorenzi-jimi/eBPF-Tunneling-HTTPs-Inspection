@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// 1. Configurazione dei parametri
-	modePtr := flag.String("mode", "fixed", "Modalità: 'fixed', 'jitter', 'slow'")
+	modePtr := flag.String("mode", "fixed", "Modalità: 'fixed', 'mixed', 'slow'")
 	urlPtr := flag.String("url", "https://localhost:8443", "URL target")
 	flag.Parse()
 
@@ -49,7 +49,7 @@ func main() {
 		case "fixed": // SCENARIO 1: Attesa fissa: 2s"
 			sleepTime = 2 * time.Second
 
-		case "jitter": // SCENARIO 2: Jitter (1s - 3s)
+		case "mixed": // SCENARIO 2: Jitter (1s - 3s)
 			min := 1.0
 			max := 3.0
 			// Genera un tempo casuale
