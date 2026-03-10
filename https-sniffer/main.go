@@ -326,6 +326,12 @@ func main() {
 						
 						// Attiva il rilevamento Beaconing anche su HTTP/1.1
 						checkBeaconing(event.Pid, event.Uid, commName, path)
+
+						// Rilevamento DoH (Analisi Path)
+						if strings.Contains(path, "/dns-query") || strings.Contains(path, "?dns=") {
+							evidence := fmt.Sprintf("Method: %s | Path: %s", method, path)
+							logEvent(event.Pid, event.Uid, commName, "WARNING", "DOH_TRAFFIC", "Rilevata query DNS over HTTPS (DoH)", evidence)
+						}
 					}
 				}
 
@@ -353,6 +359,11 @@ func main() {
 						// Check Content-Type (salviamo per eventuale body check)
 						if key == "content-type" {
 							contentTypes[event.Pid] = val
+						}
+
+						// Rilevamento DoH (Analisi Headers)
+						if (key == "content-type" || key == "accept") && strings.Contains(val, "application/dns-message") {
+							logEvent(event.Pid, event.Uid, commName, "WARNING", "DOH_TRAFFIC", "Rilevata intestazione DNS over HTTPS", key+": "+val)
 						}
 
 						// Check Stuffing Granulare (HTTP/1.1)
@@ -404,10 +415,20 @@ func main() {
 
 				if name == ":path" {
 					checkBeaconing(event.Pid, event.Uid, commName, val)
+
+					// Rilevamento DoH (Analisi Path in HTTP/2)
+					if strings.Contains(val, "/dns-query") || strings.Contains(val, "?dns=") {
+						logEvent(event.Pid, event.Uid, commName, "WARNING", "DOH_TRAFFIC", "Rilevata query DNS over HTTPS (DoH)", "Path: "+val)
+					}
 				}
 				if name == "content-type" {
 					contentTypes[event.Pid] = val
 					fmt.Printf("    📝 Content-Type: %s\n", val)
+				}
+
+				// Rilevamento DoH (Analisi Headers in HTTP/2)
+				if (name == "content-type" || name == "accept") && strings.Contains(val, "application/dns-message") {
+					logEvent(event.Pid, event.Uid, commName, "WARNING", "DOH_TRAFFIC", "Rilevata intestazione DNS over HTTPS", name+": "+val)
 				}
 
 				threshold := 250
