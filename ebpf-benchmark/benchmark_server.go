@@ -47,17 +47,15 @@ func main() {
 	http.HandleFunc("/", rootHandler)
 	http.HandleFunc("/upload", uploadHandler)
 
-	// 2. Avvio Server HTTP in CHIARO (Porta 8000) - PER SURICATA
-	// Suricata ascolterà su questa porta per validare che l'attacco esiste
+	// 2. Avvio Server HTTP in CHIARO (Porta 8000) - PER SURICATA E SNORT
 	go func() {
-		fmt.Println("⚠️  Server HTTP (Chiaro) in ascolto su :8000 (Per Test Suricata)")
+		fmt.Println("⚠️  Server HTTP (Chiaro) in ascolto su :8000 (Per Test NIDS tradizionali)")
 		if err := http.ListenAndServe(":8000", nil); err != nil {
 			log.Fatalf("Errore HTTP: %v", err)
 		}
 	}()
 
 	// 3. Avvio Server HTTPS CRIPTATO (Porta 8443) - PER EBPF
-	// Il tuo sniffer ascolterà qui.
 	fmt.Println("🔒 Server HTTPS (Criptato) in ascolto su :8443 (Per Test eBPF)")
 	
 	// Assicurati di avere server.crt e server.key nella stessa cartella
