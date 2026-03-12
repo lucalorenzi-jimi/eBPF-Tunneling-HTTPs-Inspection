@@ -99,6 +99,7 @@ func main() {
 
 	// Mappatura Magig Bytes
 	contentTypes := make(map[uint32]string)
+	// Decoders per HPACK
 	decoders := make(map[uint32]*hpack.Decoder)
 	
 	// "UID:COMM" per tracciare il comportamento dell'utente/comando
@@ -291,7 +292,8 @@ func main() {
 				}
 				// Caso B: HTTP/1.1
 				if strings.HasPrefix(sPayload, "GET ") || strings.HasPrefix(sPayload, "POST ") ||
-					strings.HasPrefix(sPayload, "HEAD ") || strings.HasPrefix(sPayload, "PUT ") || strings.HasPrefix(sPayload, "HTTP/1.") {
+				strings.HasPrefix(sPayload, "PUT ") || strings.HasPrefix(sPayload, "DELETE ") ||
+				strings.HasPrefix(sPayload, "HEAD ") || strings.HasPrefix(sPayload, "OPTIONS ") || strings.HasPrefix(sPayload, "HTTP/1.") {
 					isStuffing = true
 					protocol = "HTTP/1.1 (Text Headers)"
 				}
@@ -432,7 +434,7 @@ func main() {
 				}
 
 				threshold := 250
-				if name == "cookie" || name == "authorization" {
+				if name == "cookie" || name == "authorization" || key == "user-agent" {
 					threshold = 1500
 				}
 				if length > threshold {
