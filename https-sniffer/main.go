@@ -281,7 +281,7 @@ func main() {
 				event.Pid, commName, event.Uid, realLen, event.Len)
 
 			// PACKETS OVER THRESHOLD (>400Bytes)
-			if realLen > 2000 {
+			if realLen > 1000 {
 				isStuffing := false
 				protocol := "UNKNOWN"
 
